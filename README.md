@@ -43,6 +43,7 @@ Deployed Site:
 - [Visual Studio Code](https://code.visualstudio.com/) 
 - [UXWing](https://uxwing.com/)
 - [django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+- [Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/install.html)
 
 # UX
 ## Target Audience
