@@ -42,6 +42,7 @@ Deployed Site:
 - [GitHub](https://github.com/)
 - [Visual Studio Code](https://code.visualstudio.com/) 
 - [UXWing](https://uxwing.com/)
+- [django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 
 # UX
 ## Target Audience
