@@ -84,6 +84,7 @@ Deployed Site:
 
 Bug | Status | Fix | Images of bug
 ----|--------|-----|--------------
+Server would not run| Unresolved | |![crispy-form-bug](readme-images/bugs/server-crispy.png)
 
 ## Known Issues
 
