@@ -86,8 +86,8 @@ Deployed Site:
 
 Bug | Status | Fix | Images of bug
 ----|--------|-----|--------------
-Server would not run| Unresolved | |![crispy-form-bug](readme-images/bugs/server-crispy.png)
-
+Server would not run| Fixed | Typo in settings.py (extra 's') |![crispy-form-bug](readme-images/bugs/server-crispy.png)
+AllAuth templates would not load | Fixed | Typo in authentication statement in header.html (used '.' rather than '_') | ![auth-typo](readme-images/bugs/auth-typo.png)
 ## Known Issues
 
 
