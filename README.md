@@ -45,6 +45,10 @@ Deployed Site:
 - [django-allauth](https://django-allauth.readthedocs.io/en/latest/installation.html)
 - [Crispy forms](https://django-crispy-forms.readthedocs.io/en/latest/install.html)
 - [Crispy Bootstrap5](https://github.com/django-crispy-forms/crispy-bootstrap5)
+- [Pillow](https://pypi.org/project/Pillow/)
+- [RichTextField](https://pypi.org/project/django-richtextfield/)
+- [django-resized](https://pypi.org/project/django-resized/)
+- [CSS Gradient](https://cssgradient.io/)
 
 # UX
 ## Target Audience
