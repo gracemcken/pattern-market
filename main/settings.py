@@ -46,14 +46,18 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
 
+    # Apps
+    'home',
+    'patterns',
+
 
     # Forms
     'crispy_forms',
     'crispy_bootstrap5',
 
-    # Apps
-    'home',
-    'patterns',
+    # Cloudinary
+    'cloudinary',
+    'cloudinary_storage',
 
 ]
 

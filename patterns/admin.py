@@ -14,4 +14,4 @@ class PatternAdmin(admin.ModelAdmin):
         'pattern_guide'
     )
 
-    list_filter = ('pattern_type')
+    list_filter = ('pattern_type',)
