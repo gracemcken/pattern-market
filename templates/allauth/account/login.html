@@ -1,9 +1,10 @@
-{% extends "account/base.html" %} {% load i18n %} {% block title %}{% trans
+{% extends "account/base.html" %} {% load i18n %} {% load static %}{% block title %}{% trans
 "Sign In" %}{% endblock %} {% block content %}
 
-<div class="container text-center">
+<div class="container text-center ">
 
-<h1>{% trans "Sign In" %}</h1>
+<h1>{% trans "Welcome Back!" %}</h1>
+<img src="{% static '/icons/log-in-icon.svg' %}" class="img-fluid form-icon rounded-circle" alt="Log in icon">
 <hr>
 
 <p>
@@ -14,6 +15,7 @@
 
 <form class="form p-2" method="POST" action="{% url 'account_login' %}">
   {% csrf_token %} {{ form|crispy }} {% if redirect_field_value %}
+  
   <input
     type="hidden"
     name="{{ redirect_field_name }}"
