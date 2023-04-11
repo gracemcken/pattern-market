@@ -1,1 +1,1 @@
-web: gunicorn pattern-market.wsgi
+web: gunicorn main.wsgi
