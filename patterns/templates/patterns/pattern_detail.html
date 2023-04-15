@@ -17,7 +17,7 @@
             </p>
             <hr>
             <p><strong>Colors Used:</strong> {{ pattern.colors }}</p>
-            <p><strong>Pattern Type:</strong> {{pattern.pattern_type}}</p>
+            <p><strong>Pattern Type:</strong> {{ pattern.pattern_type|title }}</p>
 
             {% if request.user == pattern.user %}
             <div class="text-center">
