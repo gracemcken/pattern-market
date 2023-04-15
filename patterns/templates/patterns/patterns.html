@@ -10,7 +10,7 @@
     
 
     {% for pattern in patterns %}
-    <a href="" class="patterns" aria-label="Click to view {{pattern.title}}">
+    <a href="{% url 'pattern_detail' pattern.id %}" class="patterns" aria-label="Click to view {{pattern.title}}">
         <!-- Bootstrap 5 card -->
         <div class="card m-3" style="width: 18rem;">
             <img src="{{pattern.image.url}}" class="card-img-top" alt="{{pattern.image.alt}}">
