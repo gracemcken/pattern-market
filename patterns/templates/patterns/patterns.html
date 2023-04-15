@@ -3,11 +3,11 @@
 {% block title %}Patterns{% endblock %} 
 
 {% block content %}
-
+<h1 class="text-center p-2">
+    Latest Patterns
+</h1>
 <div class="container d-flex flex-row flex-wrap justify-content-center">
-    <h1 class="text-center p-2">
-        Latest Patterns
-    </h1>
+    
 
     {% for pattern in patterns %}
     <a href="" class="patterns" aria-label="Click to view {{pattern.title}}">
