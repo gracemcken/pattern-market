@@ -5,5 +5,5 @@ from .views import AddPattern, Patterns
 
 urlpatterns = [
     path('', AddPattern.as_view(), name='add_pattern'),
-    path('patterns/', Patterns.as_views(), name='patterns')
+    path('patterns/', Patterns.as_view(), name='patterns')
 ]
