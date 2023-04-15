@@ -6,12 +6,6 @@ from .models import Pattern
 
 @admin.register(Pattern)
 class PatternAdmin(admin.ModelAdmin):
-    list_display = (
-        'title',
-        'pattern_type',
-        'colors',
-        'image',
-        'pattern_guide'
-    )
+    list_display = ("title", "pattern_type", "colors", "image", "pattern_guide")
 
-    list_filter = ('pattern_type',)
+    list_filter = ("pattern_type",)

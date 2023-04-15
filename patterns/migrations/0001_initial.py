@@ -8,7 +8,6 @@ import djrichtextfield.models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
@@ -17,22 +16,62 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Pattern',
+            name="Pattern",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=300)),
-                ('description', models.CharField(max_length=500)),
-                ('supplies', djrichtextfield.models.RichTextField(max_length=10000)),
-                ('pattern_guide', djrichtextfield.models.RichTextField(max_length=10000)),
-                ('image', django_resized.forms.ResizedImageField(crop=None, force_format='WEBP', keep_meta=True, quality=75, scale=None, size=[400, None], upload_to='patterns/')),
-                ('image_alt', models.CharField(max_length=100)),
-                ('pattern_type', models.CharField(choices=[('crossstitch', 'CrossStitch'), ('blackwork', 'Blackwork'), ('embroidery', 'Embroidery')], default='mixed', max_length=50)),
-                ('colors', models.IntegerField()),
-                ('date_posted', models.DateTimeField(auto_now=True)),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='pattern_creator', to=settings.AUTH_USER_MODEL)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=300)),
+                ("description", models.CharField(max_length=500)),
+                ("supplies", djrichtextfield.models.RichTextField(max_length=10000)),
+                (
+                    "pattern_guide",
+                    djrichtextfield.models.RichTextField(max_length=10000),
+                ),
+                (
+                    "image",
+                    django_resized.forms.ResizedImageField(
+                        crop=None,
+                        force_format="WEBP",
+                        keep_meta=True,
+                        quality=75,
+                        scale=None,
+                        size=[400, None],
+                        upload_to="patterns/",
+                    ),
+                ),
+                ("image_alt", models.CharField(max_length=100)),
+                (
+                    "pattern_type",
+                    models.CharField(
+                        choices=[
+                            ("crossstitch", "CrossStitch"),
+                            ("blackwork", "Blackwork"),
+                            ("embroidery", "Embroidery"),
+                        ],
+                        default="mixed",
+                        max_length=50,
+                    ),
+                ),
+                ("colors", models.IntegerField()),
+                ("date_posted", models.DateTimeField(auto_now=True)),
+                (
+                    "user",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="pattern_creator",
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
             ],
             options={
-                'ordering': ['date_posted'],
+                "ordering": ["date_posted"],
             },
         ),
     ]
