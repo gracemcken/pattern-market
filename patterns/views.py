@@ -1,4 +1,4 @@
-from django.views.generic import CreateView, ListView, DetailView, DeleteView
+from django.views.generic import CreateView, ListView, DetailView, DeleteView, UpdateView
 from django.contrib.auth.mixins import (
     UserPassesTestMixin, LoginRequiredMixin
 )
@@ -37,8 +37,20 @@ class AddPattern(LoginRequiredMixin, CreateView):
         form.instance.user = self.request.user
         return super(AddPattern, self).form_valid(form)
     
+class EditPattern(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+    """User can edit a pattern they own"""
+    template_name = 'patterns/edit_pattern.html'
+    model = Pattern
+    form_class = PatternForm
+    success_url = '/patterns/'
+    
+    """Code to implement test"""
+    def test_func(self):
+        return self.request.user == self.get_object().user
+    
+    
 class DeletePattern(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
-    """Delete a pattern"""
+    """User can delete a pattern they own"""
     model = Pattern
     success_url = '/patterns/'
     
