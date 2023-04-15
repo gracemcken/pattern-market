@@ -1,10 +1,15 @@
-from django.views.generic import CreateView
+from django.views.generic import CreateView, ListView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Pattern
 from .forms import PatternForm
 
 # Create your views here.
 
+class Patterns(ListView):
+    """View all patterns"""
+    template_name = 'patterns/patterns.html'
+    model = Pattern 
+    context_object_name = 'patterns'
 
 class AddPattern(LoginRequiredMixin, CreateView):
     """Add pattern view"""
