@@ -49,6 +49,7 @@ Deployed Site:
 - [RichTextField](https://pypi.org/project/django-richtextfield/)
 - [django-resized](https://pypi.org/project/django-resized/)
 - [CSS Gradient](https://cssgradient.io/)
+- [black formatter](https://black.readthedocs.io/en/stable/)
 
 # UX
 ## Target Audience
