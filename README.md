@@ -94,7 +94,7 @@ Bug | Status | Fix | Images of bug
 Server would not run| Fixed | Typo in settings.py (extra 's') |![crispy-form-bug](readme-images/bugs/server-crispy.png)
 AllAuth templates would not load | Fixed | Typo in authentication statement in header.html (used '.' rather than '_') | ![auth-typo](readme-images/bugs/auth-typo.png)
 Active class CSS would not load | Fixed | typo ('.' rather than '_' used) | ![active-bug](readme-images/bugs/active-class.png)
-When trying to add pattern, receives error | Unresolved | | ![add-pattern-error](readme-images/bugs/add_pattern-error.png)
+When trying to add pattern, receives error | Fixed | Used form action instead of form method| ![add-pattern-error](readme-images/bugs/add_pattern-error.png) ![form-bug](readme-images/bugs/form-bug.png)
 ## Known Issues
 
 
