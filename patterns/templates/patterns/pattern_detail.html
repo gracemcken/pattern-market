@@ -21,7 +21,7 @@
 
             {% if request.user == pattern.user %}
             <div class="text-center">
-                <a href="" class="btn btn-secondary w-25">Edit</a>
+                <a href="{% url 'edit_pattern' pattern.id %}" class="btn btn-secondary w-25">Edit</a>
                 <a href="{% url 'delete_pattern' pattern.id %}" class="btn btn-secondary w-25">Delete</a>
             </div>
             {% endif %}
