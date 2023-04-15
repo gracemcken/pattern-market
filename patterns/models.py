@@ -42,7 +42,7 @@ class Pattern(models.Model):
     date_posted = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ["date_posted"]
+        ordering = ["-date_posted"]
 
     def __str__(self):
         return str(self.title)
