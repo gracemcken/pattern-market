@@ -34,24 +34,12 @@
               Home
             </a>
           </li>
-          <!-- Pattern dropdown -->
-          <li class="nav-item dropdown">
+          
+          <li class="nav-item ">
             <a
-              class="nav-link dropdown-toggle {% if url_name == 'patterns' %}active{% endif %}"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Patterns
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Cross Stitch</a></li>
-              <li><a class="dropdown-item" href="#">Hand Embroidery</a></li>
-              <li>
-                <a class="dropdown-item" href="#">Blackwork Embroidery</a>
-              </li>
-            </ul>
+              class="nav-link {% if url_name == 'patterns' %}active{% endif %}"
+              href="{% url 'patterns' %}">Patterns</a>
+          
           </li>
           <li class="nav-item">
             <a
