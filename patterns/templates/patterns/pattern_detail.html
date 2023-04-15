@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}{{ pattern.title}}{% endblock %}
+
+{% block content %} 
+<div class="container">
+    <div class="pattern-info m-3 p-1">
+        <div class="pattern-image">
+            <img src="{{ pattern.image.url }}" alt="{{ pattern.image_alt }}" class="pattern-pic">
+        </div>
+        <div class="pattern-detail">
+            <h1 class="text-center">
+                {{ pattern.title }}
+            </h1>
+            <p class="text-center">
+                Posted by {{pattern.user}} on {{pattern.date_posted}}
+            </p>
+            <hr>
+            <p><strong>Colors Used:</strong> {{ pattern.colors }}</p>
+            <p><strong>Pattern Type:</strong> {{pattern.pattern_type}}</p>
+
+            {% if request.user == pattern.user %}
+            <div class="text-center">
+                <a href="" class="btn btn-secondary w-25">Edit</a>
+                <a href="" class="btn btn-secondary w-25">Delete</a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    <div class="pattern-container">
+        <div class="supplies p-3">
+            <h2>Supplies</h2>
+            <p>{{ pattern.supplies|safe }}</p>
+        </div>
+        <div class="pattern-guide p-3">
+            <h2>Pattern Guide</h2>
+            <p>{{ pattern.instructions|safe }}</p>
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}
