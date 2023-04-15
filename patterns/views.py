@@ -1,5 +1,8 @@
-from django.views.generic import CreateView, ListView, DetailView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import CreateView, ListView, DetailView, DeleteView
+from django.contrib.auth.mixins import (
+    UserPassesTestMixin, LoginRequiredMixin
+)
+
 from .models import Pattern
 from .forms import PatternForm
 
@@ -33,3 +36,12 @@ class AddPattern(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super(AddPattern, self).form_valid(form)
+    
+class DeletePattern(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """Delete a pattern"""
+    model = Pattern
+    success_url = '/patterns/'
+    
+    """Code to implement test mixin"""
+    def test_func(self):
+        return self.request.user == self.get_object().user
