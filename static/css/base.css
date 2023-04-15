@@ -105,3 +105,58 @@ a.nav-link {
 .patterns:hover {
   cursor: pointer;
 }
+
+.pattern-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pattern-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.supplies, .pattern-guide, .pattern-detail {
+  width: 100%;
+}
+
+.pattern-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pattern-pic {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 62.5em) {
+  .pattern-info {
+    flex-direction: row;
+    border: 1px solid var(--black);
+  }
+  .pattern-image {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .pattern-detail {
+    width: 60%;
+    padding: 2rem;
+  }
+
+  .pattern-container {
+    flex-direction: row;
+  }
+
+  .supplies {
+    width: 33.33%;
+  }
+
+  .pattern-guide {
+    width: 66.66%;
+  }
+}
+
