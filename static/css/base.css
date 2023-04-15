@@ -89,3 +89,19 @@ a.nav-link {
 .form-icon {
   height: 2rem;
 }
+
+/* Patterns */
+
+.card {
+  height: 90%;
+  margin-top: 1rem;
+}
+
+.patterns {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.patterns:hover {
+  cursor: pointer;
+}
