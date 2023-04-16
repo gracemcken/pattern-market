@@ -51,7 +51,7 @@ Deployed Site: ![Link](https://pattern-market.herokuapp.com/)
 - [CSS Gradient](https://cssgradient.io/)
 - [black formatter](https://black.readthedocs.io/en/stable/)
 - [Online Convert](https://www.online-convert.com/)
-
+- [django messages](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/)
 # UX
 ## Target Audience
 
