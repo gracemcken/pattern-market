@@ -82,7 +82,7 @@ a.nav-link {
 .hero-banner {
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 100%;
 }
 
 .hero-image {
