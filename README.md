@@ -100,6 +100,8 @@ Active class CSS would not load | Fixed | typo ('.' rather than '_' used) | ![ac
 When trying to add pattern, receives error | Fixed | Used form action instead of form method| ![add-pattern-error](readme-images/bugs/add_pattern-error.png) ![form-bug](readme-images/bugs/form-bug.png)
 ## Known Issues
 
+1. Sometimes when loading the patterns page, the user will receive a delayed message about their activity with logging in and logging out. Due to time constraints, I did not have the opportunity to debug this and figure out why it only happens occasionally. Attached is an image of what I mean. ![django-message](readme-images/bugs/django-message.png)
+2. Search bar is non-functional. This has now a future feature which would be easily implemented if I had more time.
 
 
 # Deployment 
