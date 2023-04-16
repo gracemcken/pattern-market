@@ -3,6 +3,16 @@
 {% block title %}Patterns{% endblock %} 
 
 {% block content %}
+<!-- Django message to display confirmation of user's actions -->
+{% if messages %}
+<div class="alert alert-success w-25 mx-auto">
+<p class="messages text-center">
+    {% for message in messages %}
+    {{ message }}
+    {% endfor %}
+</p>
+</div>
+{% endif %}
 <h1 class="text-center p-2">
     Latest Patterns
 </h1>
