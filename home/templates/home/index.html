@@ -1,1 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<!-- Hero -->
+<div class="hero-banner">
+    <div class="hero-image">
+      <img src="{% static 'images/thread.webp' %}" alt="Close up image of dark blue thread">
+    </div>
+    <div class="hero-content">
+      <h1>Welcome to the Pattern Market!</h1>
+      {% if request.user.is_authenticated %}
+      <p>Start uploading patterns <a href="{% url 'add_pattern' %}" class="add-link">here</a></p>
+      {% else %}
+      <p><a href="/accounts/signup/" class="sign-up-link">Sign up</a> to start uploading patterns</p>
+      {% endif %}
+      <a href="{% url 'patterns' %}" class="btn btn-secondary">View Patterns</a>
+    </div>
+  </div>
+<!-- Hero -->
+{% endblock %}
