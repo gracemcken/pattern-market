@@ -1,4 +1,4 @@
-
+![amiresponsive](readme-images/screenshots/amiresponsive.png)
 ![Last commit](https://img.shields.io/github/last-commit/gracemcken/pattern-market) 
 ![Languages used](https://img.shields.io/github/languages/count/gracemcken/pattern-market)
 ![Top Language used](https://img.shields.io/github/languages/top/gracemcken/pattern-market)
@@ -11,10 +11,18 @@
   - [Goal](#goal)
   - [Technologies \& Resources used](#technologies--resources-used)
 - [UX](#ux)
-  - [Target Audience](#target-audience)
   - [Wireframes](#wireframes)
+  - [User Stories](#user-stories)
 - [Features](#features)
   - [Existing Features](#existing-features)
+    - [Nav bar](#nav-bar)
+    - [Hero Banner](#hero-banner)
+    - [Footer](#footer)
+    - [Sign Up \& Login Forms](#sign-up--login-forms)
+    - [Logout Confirmation](#logout-confirmation)
+    - [Recent Patterns](#recent-patterns)
+    - [Pattern View](#pattern-view)
+    - [Add Pattern](#add-pattern)
   - [Future Features](#future-features)
 - [Design](#design)
 - [Testing](#testing)
@@ -31,10 +39,13 @@
 
 
 # Site Overview
-Deployed Site: ![Link](https://pattern-market.herokuapp.com/)
+Deployed Site: [Link](https://pattern-market.herokuapp.com/)
 
 ## Goal
 
+This website was not my initial plan for my project 4, however due to sudden and prolonged illness, I had to complete this project in a short amount of time and my first version of P4 was too large of a scope to achieve. Faced with time constraints, I decided to focus on achieving the MVP required and build a basic website with CRUD functionality where users can upload their different needlework patterns.
+
+Most of this project was based on a recipe website tutorial (credited below in the relevant section), and was customised to suit my idea of posting and editing patterns rather than recipes. This project began as something to just tick boxes, however I fully believe it is an idea that has the potential to be developed much more.
 
 ## Technologies & Resources used
 
@@ -53,7 +64,6 @@ Deployed Site: ![Link](https://pattern-market.herokuapp.com/)
 - [Online Convert](https://www.online-convert.com/)
 - [django messages](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/)
 # UX
-## Target Audience
 
 ## Wireframes
 <details>
@@ -73,6 +83,10 @@ Deployed Site: ![Link](https://pattern-market.herokuapp.com/)
 </details>
 </details>
 
+## User Stories
+
+User stories and agile development can be found on the project board [here](https://github.com/users/gracemcken/projects/4)
+
 
 
 
@@ -80,13 +94,99 @@ Deployed Site: ![Link](https://pattern-market.herokuapp.com/)
 
 ## Existing Features
 
+### Nav bar
+
+This website has two versions of a navbar depending on whether a user is signed in or not. If a user is not authenticated, this is the version that will be shown:
+
+![navbar-1](readme-images/screenshots/navbar-1.png)
+<hr>
+
+Available to view is the home page, the pattern page, the register page and the login page. Only when a user is signed in and authenticated can they access this next version of the navbar, which includes the ability to upload patterns and log out:
+
+![navbar-2](readme-images/screenshots/navbar-2.png)
+<hr>
+
+Each navbar also highlights which page the user is currently on.
+
+<hr>
+
+### Hero Banner
+
+The website also features two different versions of the hero banner on the home page. If a user is not logged in, this version will be displayed, prompting the user to either sign up or view the patterns available:
+
+![hero1](readme-images/screenshots/hero1.png)
+
+<hr>
+
+If a user is signed in, the hero image appears different, prompting the user to start uploading patterns or providing access to already uploaded patterns.
+
+![hero2](readme-images/screenshots/hero2.png)
+
+<hr>
+
+### Footer
+
+The footer is basic and simple, containing icons and links to social networks.
+
+![footer](readme-images/screenshots/footer.png)
+
+<hr>
+
+### Sign Up & Login Forms
+
+Using the django allauth templates, the website includes both a sign up page and a login page.
+
+![login](readme-images/screenshots/login.png)
+![signup](readme-images/screenshots/signup.png)
+
+<hr>
+
+### Logout Confirmation
+
+If a signed in user attempts to logout, they will be prompted to confirm it with this logout page.
+
+![logout](readme-images/screenshots/logout.png)
+
+<hr>
+
+### Recent Patterns
+
+When a user navigates to the Patterns page, they will find a gallery of clickable cards that lead to different patterns that have been uploaded.
+
+![patterns](readme-images/screenshots/patterns.png)
+
+<hr>
+
+### Pattern View
+
+Should a user click into a pattern, they will have either two views. If they are logged in and were the user who uploaded the pattern, they will have the options to edit or delete.
+
+![owner](readme-images/screenshots/owner.png)
+
+However if a user is either not logged in or is logged in but not the original poster, they will see the pattern without those options.
+
+![not-owner](readme-images/screenshots/not-owner.png)
+
+### Add Pattern
+
+If a user is logged in, they will be able to add a pattern. This page contains several fields and the ability to upload an image.
+
+![add1](readme-images/screenshots/add1.png)
+![add2](readme-images/screenshots/add2.png)
+
 
 ## Future Features
+
+This website has been set up to use a search functionality, however due to lack of time this was not implemented. I would also like to enable the ability to upload files that can then be downloaded, as many patterns are created in a PDF format by designers. I don't think this would be too difficult to implement, however I did not have time. The ability to comment and like patterns is something I think would work well on this website as well.
+
+
 
 
 # Design
 
+When designing this website I wanted to keep the colours mild and neutral so that the patterns posted would stand out. Along with a muted colour scheme, I also used simple fonts so not to detract from the posts.
 
+![colour-scheme](readme-images/screenshots/colour-scheme.png)
 
 # Testing
 
