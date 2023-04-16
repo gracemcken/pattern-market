@@ -26,7 +26,6 @@
 - [Credits](#credits)
   - [Code](#code)
   - [Images](#images)
-    - [Version Control](#version-control)
 - [Acknowledgments](#acknowledgments)
   
 
@@ -58,15 +57,17 @@ Deployed Site: ![Link](https://pattern-market.herokuapp.com/)
 
 ## Wireframes
 <details>
-           <summary>Initial Project Wireframes</summary>
-           <details>
-           <summary>Base Website</summary>
-<p>
+           <summary>Pages when signed out</summary>
+<p> <img src="readme-images/wireframes/home.png">
+<img src="readme-images/wireframes/patterns.png">
+<img src="readme-images/wireframes/sign_up.png">
+<img src="readme-images/wireframes/login.png">
           </p>
           </details>
           <details>
-          <summary>Profile Pages</summary>
+          <summary>When signed in</summary>
         <p>
+        <img src="readme-images/wireframes/add_pattern.png">
          
  </p>
 </details>
@@ -124,10 +125,6 @@ Inspired by [Daisy's](https://github.com/Daisy-McG) wonderful Django [project wa
 
 ## Images
 All images except the hero image were created by me. Hero image can be found [here](https://www.pexels.com/photo/close-up-photo-of-blue-thread-3330009/) on ![pexels.com](https://www.pexels.com/).
-
-
-### Version Control
-
 
 
 
