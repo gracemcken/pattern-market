@@ -26,6 +26,11 @@
   - [Future Features](#future-features)
 - [Design](#design)
 - [Testing](#testing)
+  - [Responsiveness](#responsiveness)
+  - [485px |  | Good](#485px----good)
+  - [Lighthouse](#lighthouse)
+  - [Validators](#validators)
+  - [Manual Testing](#manual-testing)
   - [Bugs](#bugs)
   - [Known Issues](#known-issues)
 - [Deployment](#deployment)
@@ -34,7 +39,6 @@
 - [Credits](#credits)
   - [Code](#code)
   - [Images](#images)
-- [Acknowledgments](#acknowledgments)
   
 
 
@@ -189,7 +193,29 @@ When designing this website I wanted to keep the colours mild and neutral so tha
 ![colour-scheme](readme-images/screenshots/colour-scheme.png)
 
 # Testing
+Due too lack of time, I was only able to conduct manual testing for this project.
 
+## Responsiveness
+
+Size Tested | Screenshot | Quality
+------------|------------|--------
+1024px | ![1024px](readme-images/screenshots/1024.png) | Excellent
+764px | ![764px](readme-images/screenshots/764.png) | Very good
+485px | ![485px](readme-images/screenshots/485.png) | Good
+---------------------------------
+
+## Lighthouse
+
+The lighthouse results were not as high as I had hoped, however as with all other testing, I was short on time and was not able to improve it before submission.
+
+![lighthouse](readme-images/screenshots/lighthouse.png)
+
+## Validators
+
+Incomplete due to time.
+## Manual Testing
+
+Incomplete due to time.
 ## Bugs
 
 Bug | Status | Fix | Images of bug
@@ -227,7 +253,3 @@ Inspired by [Daisy's](https://github.com/Daisy-McG) wonderful Django [project wa
 
 ## Images
 All images except the hero image were created by me. Hero image can be found [here](https://www.pexels.com/photo/close-up-photo-of-blue-thread-3330009/) on ![pexels.com](https://www.pexels.com/).
-
-
-
-# Acknowledgments
