@@ -41,6 +41,7 @@
               href="{% url 'patterns' %}">Patterns</a>
           
           </li>
+          {% if request.user.is_authenticated %}
           <li class="nav-item">
             <a
               class="nav-link {% if url_name == 'add_pattern' %}active{% endif %}"
@@ -48,7 +49,6 @@
               Add a Pattern
             </a>
           </li>
-          {% if request.user.is_authenticated %}
           <li class="nav-item">
             <a
               class="nav-link {% if url_name == 'accounts_logout' %}active{% endif %}"
