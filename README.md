@@ -25,6 +25,7 @@
   - [How to Fork](#how-to-fork)
 - [Credits](#credits)
   - [Code](#code)
+  - [Images](#images)
     - [Version Control](#version-control)
 - [Acknowledgments](#acknowledgments)
   
@@ -120,6 +121,9 @@ When trying to add pattern, receives error | Fixed | Used form action instead of
 # Credits
 ## Code
 Inspired by [Daisy's](https://github.com/Daisy-McG) wonderful Django [project walkthrough](https://github.com/Daisy-McG/Recipe-Tutorial). Methods of building the website were learned from this walkthrough, however was customised for my own project.
+
+## Images
+All images except the hero image were created by me. Hero image can be found [here](https://www.pexels.com/photo/close-up-photo-of-blue-thread-3330009/) on ![pexels.com](https://www.pexels.com/).
 
 
 ### Version Control
